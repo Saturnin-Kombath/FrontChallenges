@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: .4s cubic-bezier(0.39, 0.575, 0.565, 1);
+    font-family: poppins;
+}
+
+body {
+    max-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #fff,#000000c5,#ece);
+}
+
+.container {
+    width: 400px;
+    height: 100vh;
+    margin: 0 auto;
+    max-height: 100vh;
+    padding: 5vh 0;
+    /* background-color: #bebebe; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+
+}
+
+#passDisp {
+    height: 60px;
+    background-color: #fcfcfc;
+    min-width: fit-content;
+    width: 80%;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: inset -0px -5px 10px #00000022;
+}
+
+#copy {
+    margin: 40px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 2px 15px;
+
+}
+
+#copy.active {
+    border: none;
+    background-color: rgb(19, 245, 170);
+}
+
+button {
+    font-weight: bold;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.message {
+    
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.msg {
+    padding: 2px;
+    border: 1px solid;
+    opacity: 0;
+    border: none;
+    border-radius: 6px;
+    color:#958e8e;
+    font-weight: bold;
+
+}
+
+.msg.active {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+#success {
+    transform: translateY(30px);
+    background-color: rgb(19, 245, 170);
+}
+
+#success.active {
+    transform: translateY(0);
+}
+
+#fail.active {
+    transform: translateY(-30px);
+    background-color: #e85a5a77;
+
+}
