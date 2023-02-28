@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "username": "Mark Webber",
+        "post_date": "1m",
+        "user_image": "../assets/images/avatar-mark-webber.webp",
+        "action": {
+            "type": "reaction",
+            "to": "post",
+            "postby": "you",
+            "which": "My first tournament today"
+        },
+        "seen": false
+    },
+    {
+        "id": 2,
+        "username": "Angela Gray",
+        "post_date": "5m",
+        "user_image": "../assets/images/avatar-angela-gray.webp",
+        "action": {
+            "type": "follow",
+            "who": "you,"
+        },
+        "seen": false
+    },
+    {
+        "id": 3,
+        "username": "Jacob Thompson",
+        "post_date": "1 day ",
+        "user_image": "../assets/images/avatar-jacob-thompson.webp",
+        "action": {
+            "type": "join",
+            "what": "group",
+            "name": "Chess club"
+        },
+        "seen": false
+    },
+    {
+        "id": 4,
+        "username": "Rizky Hasanuddin",
+        "post_date": " 5 days",
+        "user_image": "../assets/images/avatar-rizky-hasanuddin.webp",
+        "action": {
+            "type": "message",
+            "content": "Hello,thanks for setting up the Chess Club,I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
+        },
+        "seen": true
+    },
+    {
+        "id": 5,
+        "username": "Kimberly Smith",
+        "post_date": "1 week",
+        "user_image": "../assets/images/avatar-kimberly-smith.webp",
+        "action": {
+            "type": "comment",
+            "what": "picture",
+            "link": "../assets/images/image-chess.webp",
+            "whose": "your"
+        },
+        "seen": true
+    },
+    {
+        "id": 6,
+        "username": "Nathan Peterson",
+        "post_date": "2 weeks",
+        "user_image": "../assets/images/avatar-nathan-peterson.webp",
+        "action": {
+            "type": "reaction",
+            "to": "post",
+            "postby": "you",
+            "which": "5 end-game strategies to increase your win rate"
+        },
+        "seen": true
+    },
+    {
+        "id": 7,
+        "username": "Anna Kim",
+        "post_date": "2 weeks",
+        "user_image": "../assets/images/avatar-anna-kim.webp",
+        "action":{
+            "type":"left",
+            "what":"group",
+            "name":"Chess club"
+        },
+        "seen": true
+    }
+]

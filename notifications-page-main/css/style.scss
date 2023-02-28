@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "jakarta";
+    src: url("../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "jakarta";
+    text-decoration: none;
+    transition: .3s ease-in;
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+
+$padding: 20px;
+$Blue: hsl(219, 85%, 26%);
+$Red: hsl(1, 90%, 64%);
+$White: hsl(0, 0%, 100%);
+$Very-light-grayish-blue: hsl(210, 60%, 98%);
+$Light-grayish-blue-1: hsl(211, 68%, 94%);
+$Light-grayish-blue-2: hsl(205, 33%, 90%);
+$Grayish-blue: hsl(219, 14%, 63%);
+$Dark-grayish-blue: hsl(219, 12%, 42%);
+$Very-dark-blue: hsl(224, 21%, 14%);
+$box-shad : #00000037;
+
+.container {
+
+    min-height: 100vh;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0px 0 15px 5px #00000041;
+
+    @media screen and (max-width: 700px) {
+        width: 90vw;
+    }
+
+    @media screen and (min-width: 705px) {
+        width: 600px;
+        width: 70vw;
+        max-width: 900px;
+    }
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px $padding;
+
+    h2 {
+        span {
+            padding: 2px 8px;
+            font-size: 18px;
+            border-radius: 4px;
+            color: $Very-light-grayish-blue;
+            background-color: $Blue;
+        }
+    }
+
+    a {
+        color: $Dark-grayish-blue;
+        font-weight: 500;
+    }
+}
+
+.notifs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    padding: 10px $padding;
+}
+
+.notif {
+    position: relative;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: inset -5px 0 10px 0px $box-shad;
+
+    &:hover {
+        box-shadow: inset -5px 0 10px 0px $box-shad,
+            -5px 0 10px 0px $box-shad;
+        transform: translateX(10px);
+
+        .user_image {
+            transition-delay: .3s;
+            transform: scale(1.2);
+        }
+
+        .username {
+
+            &::before {
+                transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                width: 100%;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &.notSeen {
+        background-color: $Light-grayish-blue-1;
+    }
+}
+
+.headInf {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    min-height: 80px;
+    align-items: center;
+}
+
+.user_image {
+    padding-left: $padding;
+    width: 60px;
+    min-width: 60px;
+
+
+}
+
+.username {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: $Red;
+        bottom: -2px;
+        transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    }
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.heading {
+    padding-right: $padding;
+
+    .cont {
+        gap: 5px
+    }
+
+    li {
+        display: inline-flex;
+        padding: 3px;
+        border-radius: 50%;
+
+        &.notRead {
+            background-color: $Red;
+            margin-left: 5px;
+            transform: translateY(-3px);
+        }
+    }
+
+    .time {
+        color: $Dark-grayish-blue
+    }
+
+    @media screen and (max-width:600px) {
+        font-size: 13px;
+    }
+}
+
+.comm_pict {
+    min-width: 40px;
+    width: 50px;
+    right: 0;
+
+    @media screen and (min-width: 600px) {
+        position: absolute;
+
+    }
+
+}
+
+.message {
+    margin-left: 95px;
+    border: 1px solid $Dark-grayish-blue;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-right: $padding;
+    max-width: 400px;
+    margin-bottom: 15px;
+
+    @media screen and (max-width:600px) {
+        max-width: 50vw !important;
+    }
+
+    @media screen and (min-width: 605px) {
+        max-width: 65%;
+    }
+
+    @media screen and (min-width: 705px) {
+        max-width: 65%;
+    }
+
+    @media screen and (min-width: 800px) {
+        max-width: 70%;
+    }
+
+    @media screen and (min-width: 980px) {
+        max-width: 80%;
+    }
+
+}
